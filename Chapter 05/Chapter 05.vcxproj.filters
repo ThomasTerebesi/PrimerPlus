@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Examples\textin4.cpp">
+    <ClCompile Include="Examples\nested.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
