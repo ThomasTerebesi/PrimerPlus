@@ -29,12 +29,6 @@ int main()
 		std::cout << std::endl;
 	}
 
-	int j = 5;
-	while (++j < 9)
-	{
-		std::cout << j++ << std::endl;
-	}
-
 	std::cin.get();
 	return 0;
 }
