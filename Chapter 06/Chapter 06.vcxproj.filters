@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Examples\enum.cpp">
+    <ClCompile Include="Examples\cingolf.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
