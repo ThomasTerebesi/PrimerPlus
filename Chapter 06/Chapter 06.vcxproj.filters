@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Examples\cingolf.cpp">
+    <ClCompile Include="Examples\sumafile.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
