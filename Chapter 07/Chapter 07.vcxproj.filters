@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Examples\strgback.cpp">
+    <ClCompile Include="Examples\arrobj.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

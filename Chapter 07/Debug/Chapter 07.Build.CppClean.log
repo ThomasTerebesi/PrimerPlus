@@ -1,10 +1,12 @@
 c:\dev\c++ primer plus\chapter 07\debug\vc141.pdb
 c:\dev\c++ primer plus\chapter 07\debug\vc141.idb
-c:\dev\c++ primer plus\chapter 07\debug\strgfun.obj
-c:\dev\c++ primer plus\chapter 07\debug\strgback.obj
+c:\dev\c++ primer plus\chapter 07\debug\strctfun.obj
+c:\dev\c++ primer plus\chapter 07\debug\strctptr.obj
+c:\dev\c++ primer plus\chapter 07\debug\topfive.obj
 c:\dev\c++ primer plus\debug\chapter 07.exe
 c:\dev\c++ primer plus\debug\chapter 07.ilk
 c:\dev\c++ primer plus\debug\chapter 07.pdb
+c:\dev\c++ primer plus\chapter 07\debug\travel.obj
 c:\dev\c++ primer plus\chapter 07\debug\chapter 07.tlog\cl.command.1.tlog
 c:\dev\c++ primer plus\chapter 07\debug\chapter 07.tlog\cl.read.1.tlog
 c:\dev\c++ primer plus\chapter 07\debug\chapter 07.tlog\cl.write.1.tlog
