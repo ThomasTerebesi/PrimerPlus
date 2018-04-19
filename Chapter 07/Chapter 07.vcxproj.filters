@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Examples\arrobj.cpp">
+    <ClCompile Include="Examples\ruler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
