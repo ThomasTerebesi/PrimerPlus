@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Examples\arfupt.cpp">
+    <ClCompile Include="Exercises\3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
