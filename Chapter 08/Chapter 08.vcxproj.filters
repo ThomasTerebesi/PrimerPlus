@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Examples\secref.cpp">
+    <ClCompile Include="Examples\strquote.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
