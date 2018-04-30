@@ -15,7 +15,15 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Examples\static.cpp">
+    <ClInclude Include="Examples\namesp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Examples\namesp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Examples\usenmsp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
