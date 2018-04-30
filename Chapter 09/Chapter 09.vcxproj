@@ -19,11 +19,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Examples\namesp.h" />
+    <ClInclude Include="Exercises\golf.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Examples\usenmsp.cpp" />
-    <ClCompile Include="Examples\namesp.cpp" />
+    <ClCompile Include="Exercises\1.cpp" />
+    <ClCompile Include="Exercises\2.cpp" />
+    <ClCompile Include="Exercises\3.cpp" />
+    <ClCompile Include="Exercises\4.cpp" />
+    <ClCompile Include="Exercises\golf.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
