@@ -31,6 +31,7 @@ int main()
 	std::cin.get();
 
 	delete[] beany.str;
+
 	return 0;
 }
 
