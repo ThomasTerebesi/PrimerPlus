@@ -34,6 +34,7 @@ int main()
 			showgolf(golfArray[i]);
 		}	
 
+		// TEST
 
 		//std::cout << "\nWould you like to change the handicap of an entry? <y/n> ";
 		//char ch;
