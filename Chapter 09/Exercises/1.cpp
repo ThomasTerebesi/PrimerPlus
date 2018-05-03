@@ -34,45 +34,55 @@ int main()
 			showgolf(golfArray[i]);
 		}	
 
+		std::cout << "\nWould you like to change the handicap of an entry? <y/n> ";
+		char ch;
+		while (std::cin >> ch)
+		{
+			if (ch == 'y' || ch == 'Y')
+			{
+				std::cout << "Enter the number of the entry you want to change: ";
+				int inputIndex;
+				std::cin >> inputIndex;
 
-		//std::cout << "\nWould you like to change the handicap of an entry? <y/n> ";
-		//char ch;
-		//std::cin >> ch;
-		//if (ch == 'y' || ch == 'Y')
-		//{
-		//	std::cout << "Enter the number of the entry you want to change: ";
-		//	int inputIndex;
-		//	std::cin >> inputIndex;
-		//	
-		//	inputIndex--;
+				inputIndex--;
 
-		//	while (std::cin.fail() || inputIndex < 0 || inputIndex > golfArrayCount )
-		//	{
-		//		std::cin.clear();
-		//		std::cin.get();
-		//		std::cout << "\aInvalid entry number. Please enter a valid entry number: ";
-		//		std::cin >> inputIndex;
-		//	}
+				while (std::cin.fail() || inputIndex < 0 || inputIndex > golfArrayCount)
+				{
+					std::cin.clear();
+					std::cin.get();
+					std::cout << "\aInvalid entry number. Please enter a valid entry number: ";
+					std::cin >> inputIndex;
+				}
 
-		//	std::cout << "Enter the new handicap for " << golfArray[inputIndex].fullname << ": ";
-		//	int inputHandicap;
-		//	std::cin >> inputHandicap;
-		//	while (std::cin.fail())
-		//	{
-		//		std::cin.clear();
-		//		std::cin.get();
-		//		std::cout << "\aInvalid handicap. Please enter a valid handicap for " << golfArray[inputIndex].fullname << ": ";
-		//		std::cin >> inputIndex;
-		//	}
+				std::cout << "Enter the new handicap for " << golfArray[inputIndex].fullname << ": ";
+				int inputHandicap;
+				std::cin >> inputHandicap;
+				while (std::cin.fail())
+				{
+					std::cin.clear();
+					std::cin.get();
+					std::cout << "\aInvalid handicap. Please enter a valid handicap for " << golfArray[inputIndex].fullname << ": ";
+					std::cin >> inputIndex;
+				}
 
-		//	std::cout << "Here's " << golfArray[inputIndex].fullname << "'s updated info:" << std::endl;
-		//	showgolf(golfArray[inputIndex]);
+				handicap(golfArray[inputIndex], inputHandicap);
 
-		//	std::cin.get();
-		//}
+				std::cout << "\nHere's " << golfArray[inputIndex].fullname << "'s updated info:" << std::endl;
+				showgolf(golfArray[inputIndex]);
+
+				std::cin.get();
+
+				std::cout << "\nWould you like to change the handicap of another entry? <y/n> ";
+			}
+			else
+				break;
+		}
+		std::cin.get();
 	}
 	else
 		std::cout << "No information was entered." << std::endl;
+
+	std::cout << "\nBye!" << std::endl;
 
 	std::cin.get();
 
