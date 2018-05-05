@@ -1,3 +1,5 @@
+#pragma once
+
 const int LENGTH = 40;
 
 class Golf
@@ -8,7 +10,8 @@ private:
 public:
 	Golf();
 	Golf(const char* name, int hc);
-	void SetGolf();
-	void Handicap();
+	bool SetGolf();
+	void Handicap(int hc);
 	void ShowGolf();
+	const char* GetName();
 };

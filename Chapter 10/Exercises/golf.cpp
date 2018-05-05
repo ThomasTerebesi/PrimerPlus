@@ -4,7 +4,7 @@
 
 Golf::Golf()
 {
-	strcpy_s(fullName, '\0');
+	strcpy_s(fullName, "");
 	handicap = 0;
 }
 
@@ -14,19 +14,19 @@ Golf::Golf(const char * name, int hc)
 	handicap = hc;
 }
 
-void Golf::SetGolf()
+bool Golf::SetGolf()
 {
 	char name[LENGTH];
 	int hc;
 
 	std::cout << "Please enter a name: ";
 	std::cin.get(name, LENGTH);
-	if (name == '\0')
+	if (name[0] == '\0')
 	{
 		std::cin.clear();
 		std::cin.get();
 		std::cout << "\aInvalid name. Input terminated." << std::endl;
-		
+		return false;
 	}
 
 	std::cout << "Please enter " << name << "'s handicap: ";
@@ -35,7 +35,7 @@ void Golf::SetGolf()
 	{
 		std::cin.clear();
 		std::cin.get();
-		std::cout << "\aInvalid handicap. Please enter a valid handicap for " << g.fullname << ": ";
+		std::cout << "\aInvalid handicap. Please enter a valid handicap for " << fullName << ": ";
 		std::cin >> hc;
 	}
 
@@ -43,12 +43,22 @@ void Golf::SetGolf()
 
 	Golf temp(name, hc);
 	*this = temp;
+
+	return true;
 }
 
-void Golf::Handicap()
+void Golf::Handicap(int hc)
 {
+	handicap = hc;
 }
 
 void Golf::ShowGolf()
 {
+	std::cout << "Name: " << fullName << std::endl;
+	std::cout << "Handicap: " << handicap << std::endl;
+}
+
+const char * Golf::GetName()
+{
+	return fullName;
 }

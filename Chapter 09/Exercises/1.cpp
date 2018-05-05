@@ -5,7 +5,7 @@ const int ARRAY_SIZE = 4;
 
 int main()
 {
-	std::cout << "Enter information for up to " << ARRAY_SIZE << " in the following format:" << std::endl;
+	std::cout << "Enter information for up to " << ARRAY_SIZE << " players in the following format:" << std::endl;
 	
 	golf examplePlayer;
 	setgolf(examplePlayer, "Tony Stark", 35);
@@ -67,7 +67,7 @@ int main()
 
 				handicap(golfArray[inputIndex], inputHandicap);
 
-				std::cout << "\nHere's " << golfArray[inputIndex].fullname << "'s updated info:" << std::endl;
+				std::cout << "\nHere's the updated info:" << std::endl;
 				showgolf(golfArray[inputIndex]);
 
 				std::cin.get();
