@@ -19,11 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Exercises\2.cpp" />
-    <ClCompile Include="Exercises\person.cpp" />
+    <ClCompile Include="Exercises\3.cpp" />
+    <ClCompile Include="Exercises\golf.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Exercises\person.h" />
+    <ClInclude Include="Exercises\golf.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
