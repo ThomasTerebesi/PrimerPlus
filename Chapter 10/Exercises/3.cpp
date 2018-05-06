@@ -1,3 +1,4 @@
+// compile with golf.h and golf.cpp
 #include <iostream>
 #include "golf.h"
 
@@ -6,20 +7,19 @@ const int ARRAY_SIZE = 4;
 int main()
 {
 	std::cout << "Enter information for up to " << ARRAY_SIZE << " players in the following format:" << std::endl;
-	
-	golf examplePlayer;
-	setgolf(examplePlayer, "Tony Stark", 35);
-	showgolf(examplePlayer);
-	
-	
-	golf golfArray[ARRAY_SIZE];
+
+	Golf examplePlayer("Tony Stark", 35);
+	examplePlayer.ShowGolf();
+
+
+	Golf golfArray[ARRAY_SIZE];
 	int golfArrayCount = 0;
 
-	
+
 	while (golfArrayCount < ARRAY_SIZE)
 	{
 		std::cout << "\nENTRY #" << (golfArrayCount + 1) << std::endl;
-		if (setgolf(golfArray[golfArrayCount]))
+		if (golfArray[golfArrayCount].SetGolf())
 			golfArrayCount++;
 		else
 			break;
@@ -31,8 +31,8 @@ int main()
 		for (int i = 0; i < golfArrayCount; i++)
 		{
 			std::cout << "\nENTRY #" << (i + 1) << std::endl;
-			showgolf(golfArray[i]);
-		}	
+			golfArray[i].ShowGolf();
+		}
 
 		std::cout << "\nWould you like to change the handicap of an entry? <y/n> ";
 		char ch;
@@ -54,21 +54,21 @@ int main()
 					std::cin >> inputIndex;
 				}
 
-				std::cout << "Enter the new handicap for " << golfArray[inputIndex].fullname << ": ";
+				std::cout << "Enter the new handicap for " << golfArray[inputIndex].GetName() << ": ";
 				int inputHandicap;
 				std::cin >> inputHandicap;
 				while (std::cin.fail())
 				{
 					std::cin.clear();
 					std::cin.get();
-					std::cout << "\aInvalid handicap. Please enter a valid handicap for " << golfArray[inputIndex].fullname << ": ";
+					std::cout << "\aInvalid handicap. Please enter a valid handicap for " << golfArray[inputIndex].GetName() << ": ";
 					std::cin >> inputIndex;
 				}
 
-				handicap(golfArray[inputIndex], inputHandicap);
+				golfArray[inputIndex].Handicap(inputHandicap);
 
 				std::cout << "\nHere's the updated info:" << std::endl;
-				showgolf(golfArray[inputIndex]);
+				golfArray[inputIndex].ShowGolf();
 
 				std::cin.get();
 

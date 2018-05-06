@@ -12,9 +12,11 @@ private:
 
 	// set_tot() automatically becomes an inline function
 	// because it's in the class declaration
-	void set_tot() { total_val = shares * share_val; }; 
+	void set_tot() { total_val = shares * share_val; };
 public:
-	void acquire(const std::string & co, long n, double pr);
+	Stock(); // default constructor
+	Stock(const std::string & co, long n, double pr);
+	~Stock();
 	void buy(long num, double price);
 	void sell(long num, double price);
 	void update(double price);

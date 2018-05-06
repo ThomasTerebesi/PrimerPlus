@@ -1,4 +1,5 @@
 // golf.h -- for 1.cpp
+#pragma once
 
 const int Len = 40;
 struct golf

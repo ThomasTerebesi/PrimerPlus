@@ -115,6 +115,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Examples\mytime0.cpp" />
+    <ClCompile Include="Examples\usetime0.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Examples\mytime0.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
