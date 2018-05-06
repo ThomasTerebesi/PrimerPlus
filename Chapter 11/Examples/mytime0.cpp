@@ -1,0 +1,1 @@
+// compile with mytime0.h and mytime0.cpp
