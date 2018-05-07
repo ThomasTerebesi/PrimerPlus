@@ -114,13 +114,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="Examples\mytime2.cpp" />
-    <ClCompile Include="Examples\usetime2.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Examples\mytime2.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
