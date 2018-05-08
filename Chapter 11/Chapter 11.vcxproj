@@ -18,6 +18,13 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Examples\vect.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Examples\randwalk.cpp" />
+    <ClCompile Include="Examples\vect.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{33ECCD1A-5941-45F2-A498-F3F45A4B3B73}</ProjectGuid>
