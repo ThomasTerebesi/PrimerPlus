@@ -19,11 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Examples\vect.h" />
+    <ClInclude Include="Examples\stonewt1.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Examples\randwalk.cpp" />
-    <ClCompile Include="Examples\vect.cpp" />
+    <ClCompile Include="Examples\stone1.cpp" />
+    <ClCompile Include="Examples\stonewt1.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
