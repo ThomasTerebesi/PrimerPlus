@@ -10,7 +10,7 @@ int main()
 	std::ifstream inFile;
 
 
-	std::cout << "Enter a name of a text file: ";
+	std::cout << "Enter the name of a text file: ";
 	std::cin.getline(filename, SIZE);
 
 

@@ -15,15 +15,15 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Examples\stone1.cpp">
+    <ClCompile Include="Exercises\3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Examples\stonewt1.cpp">
+    <ClCompile Include="Exercises\3vect.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Examples\stonewt1.h">
+    <ClInclude Include="Exercises\3vect.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
