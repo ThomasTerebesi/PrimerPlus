@@ -7,7 +7,7 @@
 
 int main()
 {
-	srand(time(0));	// seed random-number generator
+	srand(static_cast<int>(time(0)));	// seed random-number generator
 	double direction;
 	VECTOR::Vector step;
 	VECTOR::Vector result(0.0, 0.0);

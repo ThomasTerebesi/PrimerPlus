@@ -39,3 +39,39 @@ void Stonewt::ShowSTN() const
 {
 	std::cout << stone << " stone, " << pdsLeft << " pounds" << std::endl;
 }
+
+bool operator<(const Stonewt & st1, const Stonewt & st2)
+{
+	return st1.pounds < st2.pounds;
+}
+
+bool operator>(const Stonewt & st1, const Stonewt & st2)
+{
+	return st1.pounds > st2.pounds;
+}
+
+bool operator<=(const Stonewt & st1, const Stonewt & st2)
+{
+	return st1.pounds <= st2.pounds;
+}
+
+bool operator>=(const Stonewt & st1, const Stonewt & st2)
+{
+	return st1.pounds >= st2.pounds;
+}
+
+bool operator==(const Stonewt & st1, const Stonewt & st2)
+{
+	return st1.pounds == st2.pounds;
+}
+
+bool operator!=(const Stonewt & st1, const Stonewt & st2)
+{
+	return st1.pounds != st2.pounds;
+}
+
+std::ostream & operator<<(std::ostream & os, const Stonewt & s)
+{
+	os << s.pounds << " pounds";
+	return os;
+}

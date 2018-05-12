@@ -14,4 +14,13 @@ public:
 	~Stonewt();						// destructor
 	void ShowLBS() const;			// show weight in pounds format
 	void ShowSTN() const;			// show weight in stone format
+
+	friend bool operator<(const Stonewt & st1, const Stonewt & st2);
+	friend bool operator>(const Stonewt & st1, const Stonewt & st2);
+	friend bool operator<=(const Stonewt & st1, const Stonewt & st2);
+	friend bool operator>=(const Stonewt & st1, const Stonewt & st2);
+	friend bool operator==(const Stonewt & st1, const Stonewt & st2);
+	friend bool operator!=(const Stonewt & st1, const Stonewt & st2);
+	
+	friend std::ostream & operator<<(std::ostream & os, const Stonewt & s);
 };
