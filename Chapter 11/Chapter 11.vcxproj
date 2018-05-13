@@ -18,13 +18,6 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Exercises\6.cpp" />
-    <ClCompile Include="Exercises\6stonewt.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Exercises\6stonewt.h" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{33ECCD1A-5941-45F2-A498-F3F45A4B3B73}</ProjectGuid>
