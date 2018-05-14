@@ -18,6 +18,13 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Examples\string1.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Examples\sayings1.cpp" />
+    <ClCompile Include="Examples\string1.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{E1070393-14A7-47A6-9837-41BE349B88FB}</ProjectGuid>
@@ -114,13 +121,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="Examples\strngbad.cpp" />
-    <ClCompile Include="Examples\vegnews.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Examples\strngbad.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
