@@ -22,6 +22,7 @@
     <ClInclude Include="Examples\queue.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Examples\bank.cpp" />
     <ClCompile Include="Examples\queue.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
