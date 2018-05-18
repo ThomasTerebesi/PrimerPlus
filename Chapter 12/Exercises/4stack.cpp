@@ -1,13 +1,32 @@
+#include <iostream>
 #include "4stack.h"
 
 Stack::Stack(int n)
 {
+	if (n <= 0)
+	{
+		std::cout << "\aStack size must be greater than 0. Stack size set to 10. (Argument was " << n << ")" << std::endl;
+		n = 10;
+	}
+	else if (n > MAX)
+	{
+		std::cout << "\aStack size must not be greater than 10. Stack size set to 10. (Argument was " << n << ")" << std::endl;
+		n = 10;
+	}
+
 	top = 0;
+	size = n;
+	items = new Item[size];
 }
 
 Stack::Stack(const Stack & st)
 {
-	// TODO: Write copy constructor
+	top = st.top;
+	size = st.size;
+
+	items = new Item[size];
+	for (int i = 0; i < top; i++)
+		items[i] = st.items[i];
 }
 
 Stack::~Stack()
@@ -22,12 +41,12 @@ bool Stack::isempty() const
 
 bool Stack::isfull() const
 {
-	return top == MAX;
+	return top == size;
 }
 
 bool Stack::push(const Item & item)
 {
-	if (top < MAX)
+	if (top < size)
 	{
 		items[top++] = item;
 		return true;
@@ -49,5 +68,28 @@ bool Stack::pop(Item & item)
 
 Stack & Stack::operator=(const Stack & st)
 {
-	// TODO: insert return statement here
+	if (this == &st)
+		return *this;
+
+	top = st.top;
+	size = st.size;
+
+	delete[] items;
+
+	items = new Item[size];
+	for (int i = 0; i < top; i++)
+		items[i] = st.items[i];
+
+	return *this;
+}
+
+std::ostream & operator<<(std::ostream & os, const Stack & st)
+{
+	for (int i = 0; i < st.top; i++)
+	{
+		os << "\tItem #" << (i + 1) << ": " << st.items[i] << "\t";
+		if (i % 2 != 0)
+			os << std::endl;
+	}
+	return os;
 }

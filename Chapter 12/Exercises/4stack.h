@@ -1,5 +1,7 @@
 #pragma once
 
+#include <iostream>
+
 typedef unsigned long Item;
 
 class Stack
@@ -7,10 +9,10 @@ class Stack
 private:
 	enum { MAX = 10 };				// constant specific to class
 	Item * items;					// holds stack items
-	int size;
+	int size;						// number of elements in stack
 	int top;						// index for top stack item
 public:
-	Stack(int n = MAX);
+	Stack(int n = MAX);				// creates stack with n elements
 	Stack(const Stack & st);
 	~Stack();
 	bool isempty() const;
@@ -21,5 +23,8 @@ public:
 
 	// pop() returns false if stack already is empty, true otherwise
 	bool pop(Item & item);			// pop top into item
+	
 	Stack & operator=(const Stack & st);
+
+	friend std::ostream & operator<<(std::ostream & os, const Stack & st);
 };
