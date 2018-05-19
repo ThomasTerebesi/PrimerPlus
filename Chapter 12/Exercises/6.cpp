@@ -16,8 +16,8 @@ int main()
 
 	std::cout << "Bank of Heather Automatic Teller Simulation" << std::endl;
 	std::cout << "\nObjective: Find the maximum number of customers per" << std::endl;
-	std::cout << "hour with an average wait time of exactly one minute." << std::endl;	
-	std::cout << "One ATM is used for the simulation(s)." << std::endl;
+	std::cout << "hour with an average wait time of exactly one minute." << std::endl;
+	std::cout << "Two ATMs are used for the simulation(s)." << std::endl;
 
 	std::cout << "\nWARNING: This simulation may take a long time to run." << std::endl;
 
@@ -50,51 +50,78 @@ void runSimulation(bool output)
 	double perHour;		// average # of arrival per hour
 	double minPerCust;	// average time between arrivals
 
+	long turnaways = 0;
 	long customers = 0; // joined the queue
 	long served = 0;	// served during the simulation
 	long sumLine = 0;	// cumulative line length
 	long lineWait = 0;	// cumulative time in line
 
-	int waitTime = 0;	// time until autoteller is free
+	int waitTimeOne = 0;	// time until autoteller is free
+	int waitTimeTwo = 0;
 
 	unsigned long runsExecuted = 0; // holds the number of runs executed so far
 
 	do
 	{
-		perHour = rand() % 60;
+		perHour = rand() % 120;
 		minPerCust = static_cast<double>(MIN_PER_HR) / perHour;
 
-		Queue line(static_cast<int>(hours * perHour));
+		Queue lineOne(static_cast<int>(hours * perHour));
+		Queue lineTwo(static_cast<int>(hours * perHour));
 
 		Item temp;	// new customer data
+		turnaways = 0;
 		customers = 0;
 		served = 0;
 		sumLine = 0;
-		waitTime = 0;
+		waitTimeOne = 0;
+		waitTimeTwo = 0;
 		lineWait = 0;
 
 		// running the simulation
 		for (int cycle = 0; cycle < cycleLimit; cycle++)
 		{
-			if (newCustomer(minPerCust))	// new customer
+			if (newCustomer(minPerCust))
 			{
-				customers++;
-				temp.set(cycle);			// cycle = time of arrival
-				line.enqueue(temp);			// add new customer to line
+				if (lineOne.isFull() && lineTwo.isFull())
+					turnaways++;
+				else
+				{
+					customers++;
+					temp.set(cycle);
+					if (lineOne.queueCount() >= lineTwo.queueCount())
+						lineTwo.enqueue(temp);
+					else
+						lineOne.enqueue(temp);
+				}
 			}
 
-			if (waitTime <= 0 && !line.isEmpty())
+
+			if (waitTimeOne <= 0 && !lineOne.isEmpty())
 			{
-				line.dequeue(temp);			// attend next customer
-				waitTime = temp.ptime();	// for waitTime minutes
+				lineOne.dequeue(temp);
+				waitTimeOne = temp.ptime();
 				lineWait += cycle - temp.when();
 				served++;
 			}
 
-			if (waitTime > 0)
-				waitTime--;
+			if (waitTimeOne > 0)
+				waitTimeOne--;
 
-			sumLine += line.queueCount();
+			sumLine+= lineOne.queueCount();
+
+
+			if (waitTimeTwo <= 0 && !lineTwo.isEmpty())
+			{
+				lineTwo.dequeue(temp);
+				waitTimeTwo = temp.ptime();
+				lineWait += cycle - temp.when();
+				served++;
+			}
+
+			if (waitTimeTwo > 0)
+				waitTimeTwo--;
+			sumLine += lineTwo.queueCount();
 		}
 
 		runsExecuted++;
