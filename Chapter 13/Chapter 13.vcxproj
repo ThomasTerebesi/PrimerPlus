@@ -18,6 +18,13 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Examples\brass.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Examples\brass.cpp" />
+    <ClCompile Include="Examples\usebrass2.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{EB58FE41-893F-46E1-A32D-434D48578EB7}</ProjectGuid>
