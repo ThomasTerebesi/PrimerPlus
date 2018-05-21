@@ -19,10 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="acctabc.cpp" />
+    <ClCompile Include="Examples\acctabc.cpp" />
+    <ClCompile Include="Examples\usebrass3.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="acctabc.h" />
+    <ClInclude Include="Examples\acctabc.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

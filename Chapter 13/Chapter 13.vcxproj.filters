@@ -15,12 +15,15 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="acctabc.cpp">
+    <ClCompile Include="Examples\acctabc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Examples\usebrass3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="acctabc.h">
+    <ClInclude Include="Examples\acctabc.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
