@@ -1,7 +1,7 @@
-// compile with 1cd.h, 1cd.cpp, 1classic.h and 1classic.cpp
+// compile with 2cd.h, 2cd.cpp, 2classic.h and 2classic.cpp
 
 #include <iostream>
-#include "1classic.h" // which will contain #include cd.h
+#include "2classic.h"
 
 void Bravo(const Cd & disk);
 
