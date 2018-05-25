@@ -19,11 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Examples\worker0.h" />
+    <ClInclude Include="Examples\stacktp.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Examples\worker0.cpp" />
-    <ClCompile Include="Examples\worktest.cpp" />
+    <ClCompile Include="Examples\stacktem.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
