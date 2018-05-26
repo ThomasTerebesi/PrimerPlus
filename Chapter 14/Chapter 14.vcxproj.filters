@@ -15,12 +15,12 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Examples\stacktp.h">
+    <ClInclude Include="Examples\arraytp.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Examples\stacktem.cpp">
+    <ClCompile Include="Examples\twod.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
