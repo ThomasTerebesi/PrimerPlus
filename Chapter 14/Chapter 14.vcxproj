@@ -19,10 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Examples\arraytp.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Examples\twod.cpp" />
+    <ClCompile Include="Examples\manyfrnd.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

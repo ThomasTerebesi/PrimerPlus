@@ -15,12 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Examples\arraytp.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Examples\twod.cpp">
+    <ClCompile Include="Examples\manyfrnd.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
