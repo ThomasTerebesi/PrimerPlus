@@ -19,7 +19,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Examples\manyfrnd.cpp" />
+    <ClCompile Include="Exercises\3.cpp" />
+    <ClCompile Include="Exercises\3workermi.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Exercises\3queuetp.h" />
+    <ClInclude Include="Exercises\3workermi.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
