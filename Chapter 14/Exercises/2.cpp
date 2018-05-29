@@ -1,3 +1,5 @@
+// compile with 2winec.h and 2winec.cpp
+
 #include <iostream>
 #include "2winec.h"
 int main(void)

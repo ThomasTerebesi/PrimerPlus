@@ -18,7 +18,7 @@ int main()
 
 		std::cout << "Enter the employee category:" << std::endl;
 		std::cout << "w: Waiter\ts: Singer" << std::endl;
-		std::cout << "t: Singing Waiter\tq : Quit" << std::endl;
+		std::cout << "t: Singing Waiter\tq: Quit" << std::endl;
 		
 		std::cin >> choice;
 

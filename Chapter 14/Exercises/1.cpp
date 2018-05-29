@@ -1,3 +1,5 @@
+// compile with 1winec.h and 1winec.cpp
+
 #include <iostream>
 #include "1winec.h"
 int main(void)
