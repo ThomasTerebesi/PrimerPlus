@@ -18,10 +18,17 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Examples\tv.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Examples\tv.cpp" />
+    <ClCompile Include="Examples\use_tv.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{551C868E-412A-46C9-B4C0-738AC6112367}</ProjectGuid>
-    <RootNamespace>Chapter14</RootNamespace>
+    <ProjectGuid>{B5E5FE0D-A73B-4F9C-95A2-EEBCAD48096F}</ProjectGuid>
+    <RootNamespace>Chapter15</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
