@@ -1,5 +1,5 @@
 #include <iostream>
-#include "tv.h"
+#include "tvfm.h"
 
 bool Tv::volUp()
 {
@@ -51,3 +51,7 @@ void Tv::settings() const
 		std::cout << "Input = " << (input == TV ? "TV" : "DVD") << std::endl;
 	}
 }
+
+
+
+

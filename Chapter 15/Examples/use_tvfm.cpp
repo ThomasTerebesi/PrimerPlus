@@ -1,7 +1,7 @@
-// compile with tv.h and tv.cpp
+// compile with tvfm.h and tvfm.cpp
 
 #include <iostream>
-#include "tv.h"
+#include "tvfm.h"
 
 int main()
 {
@@ -25,7 +25,7 @@ int main()
 	Tv s58(Tv::On);
 	s58.setMode();
 	grey.setChan(s58, 28);
-	
+
 	std::cout << "\n58\" settings:" << std::endl;
 	s58.settings();
 
