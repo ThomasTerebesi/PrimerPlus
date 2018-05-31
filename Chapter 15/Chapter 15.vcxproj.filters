@@ -15,7 +15,15 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Examples\error2.cpp">
+    <ClInclude Include="Examples\exc_mean.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Examples\exc_mean.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Examples\error5.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
