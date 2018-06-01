@@ -15,15 +15,15 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Examples\exc_mean.h">
+    <ClInclude Include="Examples\sales.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Examples\exc_mean.cpp">
+    <ClCompile Include="Examples\sales.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Examples\error5.cpp">
+    <ClCompile Include="Examples\use_sales.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
