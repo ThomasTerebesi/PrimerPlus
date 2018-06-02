@@ -19,11 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Examples\sales.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Examples\sales.cpp" />
-    <ClCompile Include="Examples\use_sales.cpp" />
+    <ClCompile Include="Examples\constcast.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

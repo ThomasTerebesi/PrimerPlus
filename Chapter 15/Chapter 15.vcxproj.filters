@@ -15,15 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Examples\sales.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Examples\sales.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Examples\use_sales.cpp">
+    <ClCompile Include="Examples\constcast.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
