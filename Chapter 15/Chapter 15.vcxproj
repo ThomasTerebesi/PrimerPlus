@@ -19,7 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Examples\constcast.cpp" />
+    <ClCompile Include="Exercises\3exc_mean.cpp" />
+    <ClCompile Include="Exercises\3exc_mean.h" />
+    <ClCompile Include="Exercises\3.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

@@ -15,7 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Examples\constcast.cpp">
+    <ClCompile Include="Exercises\3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\3exc_mean.h">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\3exc_mean.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
