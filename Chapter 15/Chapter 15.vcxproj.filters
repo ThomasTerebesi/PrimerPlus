@@ -15,14 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Exercises\3.cpp">
+    <ClCompile Include="Exercises\4.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Exercises\3exc_mean.h">
+    <ClCompile Include="Exercises\4sales.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Exercises\3exc_mean.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Exercises\4sales.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -25,14 +25,14 @@ int main()
 
 		catch (bad_hmean & bh)
 		{
-			std::cout << bh.what() << std::endl;
+			bh.Report();
 			std::cout << "Try again: ";
 			continue;
 		}
 
 		catch (bad_gmean & bg)
 		{
-			std::cout << bg.what() << std::endl;
+			bg.Report();
 			std::cout << "Sorry, you don't get to play any more." << std::endl;
 
 			break;
@@ -48,7 +48,7 @@ int main()
 double hmean(double a, double b)
 {
 	if (a == -b)
-		throw bad_hmean();
+		throw bad_hmean(a, b, "Values must not be the inverse of each other.\n");
 
 	return 2.0 * a * b / (a + b);
 }
@@ -56,7 +56,7 @@ double hmean(double a, double b)
 double gmean(double a, double b)
 {
 	if (a < 0 || b < 0)
-		throw bad_gmean();
+		throw bad_gmean(a, b, "Both values must be greater than zero.\n");
 
 	return sqrt(a * b);
 }
