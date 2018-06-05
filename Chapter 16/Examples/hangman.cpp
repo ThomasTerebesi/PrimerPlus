@@ -36,7 +36,7 @@ int main()
 		while (guesses > 0 && attempt != target)
 		{
 			char letter;
-			std::cout << "Guess a letter: ";
+			std::cout << "\nGuess a letter: ";
 			std::cin >> letter;
 	
 			if (badChars.find(letter) != std::string::npos || attempt.find(letter) != std::string::npos)
@@ -81,13 +81,14 @@ int main()
 		else
 			std::cout << "Sorry, the word is " << target << "." << std::endl;
 
-		std::cout << "Will you play another? <y/n> ";
+		std::cout << "\nWill you play another? <y/n> ";
 		std::cin >> play;
 		play = tolower(play);
 	}
 
 	std::cout << "Bye!" << std::endl;
 
+	std::cin.get();
 	std::cin.get();
 
 	return 0;
