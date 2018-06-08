@@ -20,11 +20,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Examples\ilist.cpp" />
-    <ClCompile Include="Examples\list.cpp" />
     <ClCompile Include="Examples\listrmv.cpp" />
-    <ClCompile Include="Examples\setops.cpp" />
     <ClCompile Include="Examples\functor.cpp" />
-    <ClCompile Include="Examples\multmap.cpp" />
     <ClCompile Include="Examples\funadap.cpp" />
     <ClCompile Include="Examples\strgst1.cpp" />
     <ClCompile Include="Examples\usealgo.cpp" />
