@@ -21,9 +21,6 @@
   <ItemGroup>
     <ClCompile Include="Examples\ilist.cpp" />
     <ClCompile Include="Examples\listrmv.cpp" />
-    <ClCompile Include="Examples\functor.cpp" />
-    <ClCompile Include="Examples\funadap.cpp" />
-    <ClCompile Include="Examples\strgst1.cpp" />
     <ClCompile Include="Examples\usealgo.cpp" />
     <ClCompile Include="Examples\valice.cpp" />
     <ClCompile Include="Examples\valvect.cpp" />
