@@ -1,15 +1,16 @@
 #include <iostream>
 #include <string>
+#include <cctype>
 
 bool isPalindrome(const std::string & str);
 
 int main()
 {
 	std::string input;
-	
+
 	std::cout << "Enter a word to check if it's a palindrome ('q' to quit): ";
-	
-	while (getline(std::cin,input) && input != "q")
+
+	while (getline(std::cin, input) && input != "q")
 	{
 		if (isPalindrome(input))
 			std::cout << "\t\"" << input << "\" is a palindrome." << std::endl;
@@ -24,7 +25,18 @@ int main()
 
 bool isPalindrome(const std::string & str)
 {
-	std::string reverse(str.rbegin(), str.rend());
+	std::string alphanumeric;
 
-	return str == reverse;
+	for (auto character : str)
+	{
+		if (isalpha(character))
+			if (isupper(character))
+				alphanumeric.push_back(tolower(character));
+			else
+				alphanumeric.push_back(character);
+	}
+
+	std::string reverse(alphanumeric.rbegin(), alphanumeric.rend());
+
+	return alphanumeric == reverse;
 }

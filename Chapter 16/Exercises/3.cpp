@@ -1,18 +1,31 @@
 #include <iostream>
+#include <fstream>
 #include <string>
 #include <cstdlib>
+#include <vector>
 #include <ctime>
 #include <cctype>
 
-const int NUM = 26;
-const std::string WORD_LIST[NUM] =	{ "apiary", "beetle", "cereal",
-		"danger", "ensign", "florid", "garage", "health", "insult",
-		"jackal", "keeper", "loaner", "manage", "nonce", "onset",
-		"plaid", "quilt", "remote", "stolid", "train", "useful",
-		"valid", "whence", "xenon", "yearn", "zippy" };
-
 int main()
 {
+	std::ifstream fin;
+	fin.open("hangman.txt");
+
+	if (fin.is_open() == false)
+	{
+		std::cerr << "Can't open file. Bye." << std::endl;
+		std::cin.get();
+		exit(EXIT_FAILURE);
+	}
+
+	std::vector<std::string> WORD_LIST;
+	std::string word;
+
+	while (fin >> word)
+	{
+		WORD_LIST.push_back(word);
+	}
+
 	srand(static_cast<int>(time(0)));
 
 	char play;
@@ -22,7 +35,7 @@ int main()
 
 	while (play == 'y')
 	{
-		std::string target = WORD_LIST[rand() % NUM];
+		std::string target = WORD_LIST[rand() % (WORD_LIST.size() - 1)];
 		int length = target.length();
 		std::string attempt(length, '-');
 		std::string badChars;
@@ -38,7 +51,7 @@ int main()
 			char letter;
 			std::cout << "\nGuess a letter: ";
 			std::cin >> letter;
-	
+
 			if (badChars.find(letter) != std::string::npos || attempt.find(letter) != std::string::npos)
 			{
 				std::cout << "You already guessed that. Try again." << std::endl;
