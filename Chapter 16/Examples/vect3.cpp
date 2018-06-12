@@ -29,7 +29,7 @@ int main()
 
 	if (num > 0)
 	{
-		std::cout << "\nThank you. You entered the following " << books.size() << " ratings:" << std::endl;
+		std::cout << "\nThank you. You entered the following " << books.size() << " reviews:" << std::endl;
 		std::cout << "Rating\tBook" << std::endl;
 		for_each(books.begin(), books.end(), ShowReview);
 
