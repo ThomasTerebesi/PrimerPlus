@@ -1,3 +1,1 @@
-﻿  width.cpp
-c:\dev\c++ primer plus\chapter 17\examples\width.cpp(5): warning C4244: 'initializing': conversion from 'std::streamsize' to 'int', possible loss of data
-  Chapter 17.vcxproj -> C:\Dev\C++ Primer Plus\Debug\Chapter 17.exe
+﻿

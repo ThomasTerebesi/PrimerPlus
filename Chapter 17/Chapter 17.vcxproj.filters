@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Examples\width.cpp">
+    <ClCompile Include="Examples\iomanip.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
