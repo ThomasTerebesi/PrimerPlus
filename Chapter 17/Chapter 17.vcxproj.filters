@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Examples\write.cpp">
+    <ClCompile Include="Examples\width.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
