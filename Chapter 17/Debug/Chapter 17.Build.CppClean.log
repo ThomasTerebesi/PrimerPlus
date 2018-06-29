@@ -1,18 +1,13 @@
 c:\dev\c++ primer plus\chapter 17\debug\vc141.pdb
 c:\dev\c++ primer plus\chapter 17\debug\vc141.idb
-c:\dev\c++ primer plus\chapter 17\debug\write.obj
-c:\dev\c++ primer plus\chapter 17\debug\defaults.obj
-c:\dev\c++ primer plus\chapter 17\debug\manip.obj
-c:\dev\c++ primer plus\chapter 17\debug\width.obj
-c:\dev\c++ primer plus\chapter 17\debug\fill.obj
-c:\dev\c++ primer plus\chapter 17\debug\precise.obj
-c:\dev\c++ primer plus\chapter 17\debug\showpt.obj
-c:\dev\c++ primer plus\chapter 17\debug\setf.obj
-c:\dev\c++ primer plus\chapter 17\debug\setf2.obj
-c:\dev\c++ primer plus\chapter 17\debug\iomanip.obj
+c:\dev\c++ primer plus\chapter 17\debug\check_it.obj
+c:\dev\c++ primer plus\chapter 17\debug\cinexcp.obj
+c:\dev\c++ primer plus\chapter 17\debug\peeker.obj
+c:\dev\c++ primer plus\chapter 17\debug\truncate.obj
 c:\dev\c++ primer plus\debug\chapter 17.exe
 c:\dev\c++ primer plus\debug\chapter 17.ilk
 c:\dev\c++ primer plus\debug\chapter 17.pdb
+c:\dev\c++ primer plus\chapter 17\debug\get_fun.obj
 c:\dev\c++ primer plus\chapter 17\debug\chapter 17.tlog\cl.command.1.tlog
 c:\dev\c++ primer plus\chapter 17\debug\chapter 17.tlog\cl.read.1.tlog
 c:\dev\c++ primer plus\chapter 17\debug\chapter 17.tlog\cl.write.1.tlog

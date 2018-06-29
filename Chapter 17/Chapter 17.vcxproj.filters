@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Examples\iomanip.cpp">
+    <ClCompile Include="Examples\truncate.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

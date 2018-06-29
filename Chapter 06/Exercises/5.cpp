@@ -55,8 +55,7 @@ int main()
 	float seconds = 3.0;
 	clock_t delay = static_cast<clock_t>(seconds * CLOCKS_PER_SEC);
 	clock_t start = clock();
-	while (clock() - start < delay)
-		;
+	while (clock() - start < delay);
 
 	return 0;
 }
