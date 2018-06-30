@@ -27,7 +27,7 @@ int main()
 	std::cin.get(ch);
 	std::cout << "\nThe next input character is " << ch << '.' << std::endl;	// does not discard the '#'
 
-	float seconds = 7.5;
+	float seconds = 7.5f;
 	clock_t delay = static_cast<clock_t>(seconds * CLOCKS_PER_SEC);
 	clock_t start = clock();
 	while (clock() - start < delay);

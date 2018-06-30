@@ -27,7 +27,7 @@ int main()
 	std::cout << "\n\tName:\t" << name << std::endl;
 	std::cout << "\tTitle:\t" << title << std::endl;
 
-	float seconds = 7.5;
+	float seconds = 7.5f;
 	clock_t delay = static_cast<clock_t>(seconds * CLOCKS_PER_SEC);
 	clock_t start = clock();
 	while (clock() - start < delay);

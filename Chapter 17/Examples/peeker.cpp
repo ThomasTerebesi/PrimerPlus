@@ -42,7 +42,7 @@ int main()
 	else
 		std::cout << "End of file reached." << std::endl;
 
-	float seconds = 7.5;
+	float seconds = 7.5f;
 	clock_t delay = static_cast<clock_t>(seconds * CLOCKS_PER_SEC);
 	clock_t start = clock();
 	while (clock() - start < delay);

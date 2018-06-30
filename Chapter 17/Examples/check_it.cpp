@@ -17,7 +17,7 @@ int main()
 	if (std::cin.fail())
 		std::cin.clear();
 
-	float seconds = 5.0;
+	float seconds = 5.0f;
 	clock_t delay = static_cast<clock_t>(seconds * CLOCKS_PER_SEC);
 	clock_t start = clock();
 	while (clock() - start < delay);
