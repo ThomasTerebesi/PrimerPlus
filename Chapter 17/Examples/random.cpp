@@ -30,14 +30,17 @@ int main()
 
 	if (finout.is_open())
 	{
+		finout.seekg(0);
+
 		std::cout << "Here are the current contents of the " << file << " file:" << std::endl;
 		
-		while (finout.read((char *)&pl, sizeof(pl)));
+		while (finout.read((char *)&pl, sizeof(pl)))
 		{
 			std::cout << ct++ << ": " << std::setw(LIM) << pl.name << ": "
 				<< std::setprecision(0) << std::setw(12) << pl.population
 				<< std::setprecision(2) << std::setw(6) << pl.g << std::endl;
 		}
+
 		
 		if (finout.eof())
 			finout.clear();

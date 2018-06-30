@@ -27,13 +27,15 @@ int main()
 
 	if (fin.is_open())
 	{
-		std::cout << "Here are the current contents of the " << file << " file:" << std::endl;
-		while (fin.read((char *)&pl, sizeof(pl)));
+		std::cout << "Here are the current contents of the " << file << " file:" << std::endl;		
+
+		while (fin.read((char *)&pl, sizeof(pl)))
 		{
 			std::cout << std::setw(20) << pl.name << ": "
 				<< std::setprecision(0) << std::setw(12) << pl.population
 				<< std::setprecision(2) << std::setw(6) << pl.g << std::endl;
 		}
+
 		fin.close();
 	}
 
