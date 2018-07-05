@@ -18,13 +18,6 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Exercises\7.cpp" />
-    <ClCompile Include="Exercises\7store.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Exercises\7store.h" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{2FA62321-837B-4CBA-9FC2-369B8119D203}</ProjectGuid>
