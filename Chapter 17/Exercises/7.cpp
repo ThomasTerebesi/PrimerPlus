@@ -1,3 +1,5 @@
+// compile with 7store.h and 7store.cpp
+
 #include <iostream>
 #include <string>
 #include <vector>

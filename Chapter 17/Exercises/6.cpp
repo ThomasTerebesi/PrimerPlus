@@ -1,3 +1,5 @@
+// compile with 6emp.h and 6emp.cpp
+
 #include <iostream>
 #include <fstream>
 #include <string>
