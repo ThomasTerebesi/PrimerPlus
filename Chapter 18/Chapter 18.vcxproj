@@ -19,7 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Exercises\1.cpp" />
+    <ClCompile Include="Exercises\2.cpp" />
+    <ClCompile Include="Exercises\2cpmv.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Exercises\2cpmv.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

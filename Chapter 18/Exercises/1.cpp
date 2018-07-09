@@ -1,4 +1,19 @@
-// TODO: Everything...
+#include <iostream>
+#include <initializer_list>
+#include <algorithm>
+#include <list>
+
+template<typename T>
+T average_list(const std::initializer_list<T>& list)
+{
+	T result = 0;
+	for (T entry : list)
+		result += entry;
+
+	result /= list.size();
+
+	return result;
+}
 
 int main()
 {
@@ -11,5 +26,8 @@ int main()
 	// forced list of double
 	auto ad = average_list<double>({ 'A', 70, 65.33 });
 	cout << ad << endl;
+
+	cin.get();
+
 	return 0;
 }
